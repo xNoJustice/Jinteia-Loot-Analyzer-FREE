@@ -30,11 +30,6 @@ jobs:
         run: |
           pyinstaller --onefile --noconsole --name "Jinteia-Portable-${{ github.sha }}" Jinteia-Loot-Analyzer-FREE.py
 
-      - name: Build Folder Version
-        run: |
-          pyinstaller --onedir --noconsole --name "Jinteia-Full" Jinteia-Loot-Analyzer-FREE.py
-          powershell Compress-Archive -Path dist/Jinteia-Full -DestinationPath dist/Jinteia-Full-${{ github.sha }}.zip
-
       - name: Upload to Release
         uses: softprops/action-gh-release@v2
         with:
@@ -43,6 +38,5 @@ jobs:
           body: "Automated build from commit ${{ github.sha }}"
           files: |
             dist/*.exe
-            dist/*.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
