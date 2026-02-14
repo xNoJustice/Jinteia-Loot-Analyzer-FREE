@@ -15,4 +15,4 @@ This is free version of loot analyzer. This is community project, so every impro
 3. Run the .exe
 4. Use ingame the white box for yangs and loot to have updates in files.
 
-<img width="703" height="836" alt="image" src="https://github.com/user-attachments/assets/17b894bb-aaa7-4519-870e-5437006489a1" />
+<img width="693" height="820" alt="image" src="https://github.com/user-attachments/assets/70ad2b8e-4282-4072-933d-467d08e3dd40" />
